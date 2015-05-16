@@ -1,1 +1,0 @@
-< class="alika alika__elem">

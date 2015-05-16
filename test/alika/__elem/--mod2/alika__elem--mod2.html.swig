@@ -1,1 +1,0 @@
-< class="alika__elem alika__elem--mod2">

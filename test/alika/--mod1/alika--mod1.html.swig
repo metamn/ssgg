@@ -1,1 +1,0 @@
-< class="alika alika--mod1">
