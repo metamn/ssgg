@@ -17,5 +17,7 @@ npm install
 
 ### Documentation
 
+See the [wiki](https://github.com/metamn/ssgg/wiki).
+
 ### License
 (c) 2015 Bartus Csongor. Licensed under [GPL v2.0](http://choosealicense.com/licenses/gpl-2.0/).
