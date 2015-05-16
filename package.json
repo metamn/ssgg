@@ -1,0 +1,28 @@
+{
+  "name": "ssgg",
+  "version": "1.0.0",
+  "description": "Static site and styleguide generator",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metamn/ssgg.git"
+  },
+  "keywords": [
+    "BEM",
+    "Styleguide"
+  ],
+  "author": "Csongor Bartus",
+  "license": "GPL v2",
+  "bugs": {
+    "url": "https://github.com/metamn/ssgg/issues"
+  },
+  "homepage": "https://github.com/metamn/ssgg",
+  "devDependencies": {
+    "fs": "0.0.2",
+    "mkdirp": "^0.5.1",
+    "yargs": "^3.9.0"
+  }
+}
