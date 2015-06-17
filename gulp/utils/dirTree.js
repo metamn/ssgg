@@ -7,7 +7,7 @@ var fs = require('fs'),
     path = require('path');
 
 
-module.exports = function(filename) {
+function dirTree(filename) {
   var stats = fs.lstatSync(filename);
   var info = { path: filename, name: path.basename(filename) };
 
@@ -22,3 +22,6 @@ module.exports = function(filename) {
 
   return info;
 }
+
+
+module.exports = dirTree; 

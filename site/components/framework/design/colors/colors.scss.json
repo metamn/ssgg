@@ -1,0 +1,29 @@
+{
+  "colors": [
+    {
+      "name": "white",
+      "value": "fff",
+      "description": "Main color"
+    },
+    {
+      "name": "blue",
+      "value": "#4916DA",
+      "description": "Main color"
+    }
+  ],
+  "color_pairs": [
+    {
+      "name": "white-on-blue",
+      "properties": [
+        {
+          "name": "color",
+          "value": "$white"
+        },
+        {
+          "name": "background-color",
+          "value": "$blue"
+        }
+      ]
+    }
+  ]
+}
