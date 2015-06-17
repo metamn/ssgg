@@ -1,0 +1,2 @@
+// Empty
+var f = 'Empty';

@@ -43,6 +43,28 @@ module.exports = {
 
 
 
+  // .js files to concat
+  js_src: ['site/components/framework/**/*.js', 'site/components/project/**/*.js', 'site/components/pages/**/*.js'],
+
+  // .js minimized file name
+  js_filename: 'site.js',
+
+  // .js file destination
+  js_dest: 'dist/assets/scripts',
+
+
+  // .js files to concat for styleguide
+  styleguide_js_src: ['styleguide/components/pages/**/*.js', 'styleguide/components/framework/**/*.js', 'styleguide/components/project/**/*.js'],
+
+  // .js minimized file name for styleguide
+  styleguide_js_filename: 'styleguide.js',
+
+  // .js file destination for styleguide
+  styleguide_js_dest: 'dist/styleguide/assets/scripts',
+
+
+
+
   // The global KSS file
   // - it contains all source code documentation from /site
   kss_src: '../../styleguide/kss.json'
