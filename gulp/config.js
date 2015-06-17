@@ -1,6 +1,12 @@
 // Site wide configuration
 
 module.exports = {
+  // Site url
+  // - used by the sitemap generator
+  site_url: 'site.url',
+
+
+
   // The destination folder where all the generated files will be copied
   // - the contents of this folder will be uploaded to a static web server like Github Pages
   dest: 'dist',
@@ -77,6 +83,32 @@ module.exports = {
 
   // .html files to be moved into dest
   html_src: 'components/pages/**/**/*.html',
+
+
+
+
+
+  // Styleguide menu for BEM framework items
+  styleguide_menu_framework: 'site/components/framework',
+
+  // Styleguide menu for BEM project items
+  styleguide_menu_project: 'site/components/project',
+
+  // Styleguide menu destination file for BEM framework
+  styleguide_menu_framework_dest: 'styleguide/components/project/styleguide-menu/__framework/styleguide-menu__framework.html.swig',
+
+  // Styleguide menu destination file for BEM project
+  styleguide_menu_project_dest: 'styleguide/components/project/styleguide-menu/__project/styleguide-menu__project.html.swig',
+
+
+
+
+  // Which folders to copy from /site to /styleguide
+  styleguide_folders_copy: ['site/components/framework/**/**/*','site/components/project/**/**/*'],
+
+  // Which folders to remove from /styleguide
+  styleguide_folders_remove: ['styleguide/components/pages/framework/**/**/*','styleguide/components/pages/project/**/**/*'],
+
 
 
 

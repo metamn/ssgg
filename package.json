@@ -35,10 +35,14 @@
     "gulp-postcss": "^5.1.8",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.1",
+    "gulp-sitemap": "^2.1.1",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-swig": "^0.7.4",
     "gulp-uglify": "^1.2.0",
+    "inflection": "^1.7.1",
+    "kss": "^2.1.0",
     "mkdirp": "^0.5.1",
+    "run-sequence": "^1.1.0",
     "yargs": "^3.9.0"
   }
 }
