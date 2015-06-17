@@ -3,7 +3,7 @@
 Remember [Jekyll?](http://jekyllrb.com/)
 This is a very similar tool with the following differences:
 
-* Less [opinionated](https://github.com/metamn/ssgg/wiki/opinionated)
+* Less [opinionated](https://github.com/metamn/ssgg/wiki/Opinionated)
 * Fully extendable
 * Generates a styleguide in sync with the site
 
