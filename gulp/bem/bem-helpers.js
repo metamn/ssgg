@@ -57,13 +57,13 @@ var makeClass = function(object, item, parent, parent2) {
       return item;
       break;
     case 'element':
-      return parent + ' ' + parent + '__' + item;
+      return parent + '__' + item;
       break;
     case 'modifier-for-block':
-      return parent + ' ' + parent + '--' + item;
+      return parent + '--' + item;
       break;
     case 'modifier-for-element':
-      return parent2 + parent + ' ' + parent2 + parent + '--' + item;
+      return parent2 + parent + '--' + item;
   }
 }
 

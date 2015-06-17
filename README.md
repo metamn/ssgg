@@ -3,7 +3,7 @@
 Remember [Jekyll?](http://jekyllrb.com/)
 This is a very similar tool with the following differences:
 
-* Less opinionated
+* Less [opinionated](https://github.com/metamn/ssgg/wiki/opinionated)
 * Fully extendable
 * Generates a styleguide in sync with the site
 
@@ -14,6 +14,13 @@ git clone https://github.com/metamn/ssgg
 cd ssgg
 npm install
 ```
+
+### Technologies used
+
+* Gulp
+* SWIG
+* KSS
+
 
 ### Documentation
 
