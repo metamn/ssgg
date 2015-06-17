@@ -5,7 +5,6 @@
 var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     onError = require('../utils/onError'),
-    data = require('gulp-data'),
 
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
@@ -20,9 +19,6 @@ var paths = require('./../config');
 var _js = function(source, filename, dest) {
   return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
-    .pipe(data(function(file) {
-      console.log("Merging " + file.path + " into " + filename)
-    }))
     .pipe(concat(filename))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())

@@ -63,6 +63,21 @@ module.exports = {
   styleguide_js_dest: 'dist/styleguide/assets/scripts',
 
 
+  // .js files to move
+  js_move_src: 'assets/scripts/*.js',
+
+  // .js files to move destination
+  js_move_dest: 'dist/assets/scripts',
+
+  // .js files to move destination for styleguide
+  styleguide_js_move_dest: 'dist/styleguide/assets/scripts',
+
+
+
+
+  // .html files to be moved into dest
+  html_src: 'components/pages/**/**/*.html',
+
 
 
   // The global KSS file
