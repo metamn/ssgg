@@ -22,7 +22,12 @@
   "homepage": "https://github.com/metamn/ssgg",
   "devDependencies": {
     "browser-sync": "^2.7.11",
+    "front-matter": "^1.0.0",
     "fs": "0.0.2",
+    "gulp-data": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-swig": "^0.7.4",
     "mkdirp": "^0.5.1",
     "yargs": "^3.9.0"
   }

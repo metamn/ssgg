@@ -1,6 +1,6 @@
 // Error handler
 
-var onError = function(error) {
+module.exports = function(error) {
   console.log(error.message)
   this.emit('end');
 };
