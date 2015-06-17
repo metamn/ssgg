@@ -1,0 +1,8 @@
+// Import everything for /site
+// -if something is changed here please update styleguide/assets/styles/styleguide.scss too !!!
+
+@import '../../components/framework/structure/**/*.scss';
+@import '../../components/framework/design/**/*.scss';
+@import '../../components/framework/behavior/**/*.scss';
+@import '../../components/project/**/*.scss';
+@import '../../components/pages/**/*.scss';

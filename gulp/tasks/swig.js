@@ -57,17 +57,18 @@ var _swig = function(source, dest, config, grabJSON) {
         }
       }
     }))
-    
+
     .pipe(rename({ extname: '' }))
     .pipe(gulp.dest(dest));
 }
 
 
-// Swig
+// Task for compiling .swig files from /site
 gulp.task('swig', function() {
   _swig('site/' + paths.swig_src, 'site/' + paths.swig_dest, paths.config_json);
 });
 
+// Task for compiling .swig files from /styleguide
 gulp.task('swig_sg', function() {
   _swig('styleguide/' + paths.swig_src, 'styleguide/' + paths.swig_dest, paths.styleguide_config_json, true);
 });

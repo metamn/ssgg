@@ -6,6 +6,7 @@ module.exports = {
   dest: 'dist',
 
 
+
   // Global config.json file
   // - this will be loaded every time a .swig file is compiled
   config_json: '../../site/config.json',
@@ -23,6 +24,22 @@ module.exports = {
   // Swig dest files (same directory)
   // - and put in the same directory where the original .swig file was found
   swig_dest: 'components',
+
+
+
+
+  // .scss file to compile
+  scss_src: 'assets/styles/site.scss',
+
+  // .scss file to compile for /styleguide
+  styleguide_scss_src: 'assets/styles/styleguide.scss',
+
+  // .css file destination
+  scss_dest: 'dist/assets/styles',
+
+  // .css file destination for styleguide
+  styleguide_scss_dest: 'dist/styleguide/assets/styles',
+
 
 
 
