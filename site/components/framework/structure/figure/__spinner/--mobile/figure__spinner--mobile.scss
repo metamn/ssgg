@@ -1,0 +1,7 @@
+@mixin figure__spinner--mobile($spinner-type) {
+  @include mobile {
+    background-image: url("/assets/images/spinner#{$spinner-type}-small.gif");
+    min-width: 30px;
+    min-height: 30px;
+  }
+}

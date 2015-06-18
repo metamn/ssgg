@@ -1,0 +1,7 @@
+@mixin figure__figcaption--from-title {
+  display: none;
+
+  &.figcaption--from-title {
+    display: flex;
+  }
+}

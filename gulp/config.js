@@ -1,4 +1,5 @@
-// Site wide configuration
+// Configuration for Gulp tasks
+
 
 module.exports = {
   // Site url
@@ -10,6 +11,22 @@ module.exports = {
   // The destination folder where all the generated files will be copied
   // - the contents of this folder will be uploaded to a static web server like Github Pages
   dest: 'dist',
+
+
+
+  // where to resize images
+  image_resize_dest: 'site/assets/images/resized',
+
+  // images to resize and optimize
+  images_resize_src: 'site/assets/images/*.{png,jpg,gif}',
+
+  // images to move
+  images_src: 'site/assets/images/*.{png,jpg,gif}',
+
+  // images destination
+  images_dest: 'dist/assets/images',
+
+  
 
 
 

@@ -1,0 +1,50 @@
+<figure >
+  
+
+  <!-- The default extension is .png but other formats are handled too -->
+  
+  
+
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/_desktop.png, /assets/images/_desktop2x.png 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/_laptop.png, /assets/images/_laptop2x.png 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/_tablet.png, /assets/images/_tablet2x.png 2x">
+    <source srcset="/assets/images/_mobile.png, /assets/images/_mobile2x.png 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/_desktop.png" alt="">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    
+  </figcaption>
+
+  
+</figure>
