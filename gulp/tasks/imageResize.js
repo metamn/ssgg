@@ -50,6 +50,7 @@ var _image_batch_resize = function(files, retina, retina_name) {
       // Get the associated JSON file with size definitions
       splits = file.path.split('.');
       json_file = splits[0] + '.json';
+      // If there is JSON resize the images
       if (fs.existsSync(json_file)) {
         json = require(json_file);
         sizes = json.image_sizes;

@@ -6,7 +6,7 @@
         "name": "wanderlust-festival-laptop"
       },
       {
-        "title": "Different PNG images for different devices. Resize to browser to see changes.",
+        "title": "Different PNG images for different devices. Resize the browser to tablet/mobile to see changes.",
         "name": "smuff-product-laptop",
         "responsive" : [
           {
