@@ -23,6 +23,9 @@ module.exports = {
   // images destination
   images_dest: 'dist/assets/images',
 
+  // supported images
+  image_extensions: '/*.{png,jpg,.gif}',
+
 
 
 
