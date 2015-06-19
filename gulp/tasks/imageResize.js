@@ -1,5 +1,5 @@
 // Image resize
-// - create images with a specific height and/or width
+// - create images with a specific height or width
 // - create 2x images for retina displays
 
 
@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     data = require('gulp-data'),
     fs = require('fs'),
-    imageResize = require('gulp-image-resize');
+    imageResize = require('gulp-image-resize'),
+    gulpif = require('gulp-if');
 
 
 // Configuration
@@ -20,15 +21,22 @@ var paths = require('./../config');
 
 
 // Resize a single image with ImageMagick
-var _image_resize = function(file, size, name) {
-  console.log("Resizing " + file + " height to " + size);
+var _image_resize = function(file, sizeType, size, name) {
+  console.log("Resizing " + file + " " + sizeType + " to " + size);
   gulp.src(file)
     .pipe(plumber({errorHandler: onError}))
-    .pipe(imageResize({
-      height : size,
-      sharpen: true,
-      imageMagick: true
-    }))
+    .pipe(gulpif(sizeType == 'height',
+      imageResize({
+        height : size,
+        sharpen: true,
+        imageMagick: true
+      }),
+      imageResize({
+        width : size,
+        sharpen: true,
+        imageMagick: true
+      })
+    ))
     .pipe(rename(function (path) { path.basename += "_" + name; }))
     .pipe(gulp.dest(paths.image_resize_dest));
 }
@@ -39,14 +47,22 @@ var _image_batch_resize = function(files, retina, retina_name) {
   return gulp.src(files)
     .pipe(plumber({errorHandler: onError}))
     .pipe(data(function(file) {
-      // Get the associated JSON file
+      // Get the associated JSON file with size definitions
       splits = file.path.split('.');
       json_file = splits[0] + '.json';
       if (fs.existsSync(json_file)) {
         json = require(json_file);
         sizes = json.image_sizes;
         for (i in sizes) {
-          _image_resize(file.path, sizes[i].height * retina, sizes[i].name + retina_name);
+          // Resize width or height?
+          if (typeof sizes[i].height !== 'undefined') {
+            size = sizes[i].height;
+            sizeType = 'height';
+          } else {
+            size = sizes[i].width;
+            sizeType = 'width';
+          }
+          _image_resize(file.path, sizeType, size * retina, sizes[i].name + retina_name);
         }
       }
     }))
