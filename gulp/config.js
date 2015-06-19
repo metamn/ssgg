@@ -18,15 +18,12 @@ module.exports = {
   image_resize_dest: 'site/assets/images/resized',
 
   // images to resize and optimize
-  images_resize_src: 'site/assets/images/*.{png,jpg,gif}',
-
-  // images to move
-  images_src: 'site/assets/images/*.{png,jpg,gif}',
+  images_resize_src: 'site/assets/images/to-resize/*.{png,jpg,gif}',
 
   // images destination
   images_dest: 'dist/assets/images',
 
-  
+
 
 
 

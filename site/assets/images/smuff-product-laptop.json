@@ -1,0 +1,12 @@
+{
+  "image_sizes": [
+    {
+      "name": "laptop",
+      "height": "407"
+    },
+    {
+      "name": "desktop",
+      "height": "587"
+    }
+  ]
+}

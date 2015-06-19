@@ -1,4 +1,7 @@
 // Image resize
+// - create images with a specific height and/or width
+// - create 2x images for retina displays
+
 
 // Plugins
 var gulp = require('gulp'),

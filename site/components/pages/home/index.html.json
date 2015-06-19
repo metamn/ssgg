@@ -2,8 +2,24 @@
   "home": {
     "images": [
       {
-        "title": "PNG",
+        "title": "Same PNG image across all devices",
         "name": "wanderlust-festival-laptop"
+      },
+      {
+        "title": "Different PNG images for different devices. Resize to browser to see changes.",
+        "name": "smuff-product-laptop",
+        "responsive" : [
+          {
+            "breakpoint": "mobile",
+            "title": "Specific image for mobile only",
+            "name": "smuff-product-mobile"
+          },
+          {
+            "breakpoint": "tablet",
+            "title": "Specific image for tablet only",
+            "name": "smuff-product-tablet"
+          }
+        ]
       }
     ]
   }
