@@ -12,8 +12,6 @@
 
   <body>
 
-    <h1>Home</h1>
-
     
       
       <figure >
@@ -131,6 +129,61 @@
 
   <figcaption class="figcaption figcaption--from-title">
     Different PNG images for different devices. Resize the browser to tablet/mobile to see changes.
+  </figcaption>
+
+  
+</figure>
+
+    
+      
+      <figure >
+  
+
+  <!-- The default extension is .png but other formats are handled too -->
+  
+  
+    
+  
+
+  <!-- Naming convention for responsive images -->
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  <!-- Showing different images for different devices -->
+  
+
+
+  <!-- Figcaption is image title unless is not set explicitely -->
+  
+  
+
+  
+
+
+  <!-- Images are served from /site also for /styleguide -->
+  
+  
+
+
+  <picture>
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source media="(min-width: 1600px)" srcset="/assets/images/scatter_desktop.jpg, /assets/images/scatter_desktop2x.jpg 2x">
+    <source media="(min-width: 1199px)" srcset="/assets/images/scatter_laptop.jpg, /assets/images/scatter_laptop2x.jpg 2x">
+    <source media="(min-width: 600px)" srcset="/assets/images/scatter_tablet.jpg, /assets/images/scatter_tablet2x.jpg 2x">
+    <source srcset="/assets/images/scatter_mobile.jpg, /assets/images/scatter_mobile2x.jpg 2x">
+    <!--[if IE 9]></video><![endif]-->
+    <img srcset="/assets/images/scatter_desktop.jpg" alt="JPG image">
+  </picture>
+
+  <figcaption class="figcaption figcaption--from-title">
+    JPG image
   </figcaption>
 
   

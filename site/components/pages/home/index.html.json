@@ -20,6 +20,11 @@
             "name": "smuff-product-tablet"
           }
         ]
+      },
+      {
+        "title": "JPG image",
+        "name": "scatter",
+        "extension": ".jpg"
       }
     ]
   }
