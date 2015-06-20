@@ -29,6 +29,13 @@ See the [wiki](https://github.com/metamn/ssgg/wiki).
 
 ### Usage
 
+A quick demo is found in this repository to showcase the basic capabilities of SSGG:
+
+* creates various responsive images
+* displays color definitions in the styleguide
+
+
+
 ##### Install
 
 ```
