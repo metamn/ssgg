@@ -29,7 +29,7 @@ See the [wiki](https://github.com/metamn/ssgg/wiki).
 
 ### Usage
 
-#### Install
+Install
 
 ```
 git clone https://github.com/metamn/ssgg
@@ -37,7 +37,7 @@ cd ssgg
 [sudo] npm install
 ```
 
-#### Run
+Run
 ```
 gulp images
 gulp
