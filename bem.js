@@ -3,7 +3,7 @@
 
 // Modules
 //
-var commands = require('./gulp/bem/bem-commands');
+var commands = require('./bem/bem-commands');
 
 
 
