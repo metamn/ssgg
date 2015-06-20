@@ -21,7 +21,7 @@ var paths = require('./../config');
 
 
 // Resize a single image with ImageMagick
-var _image_resize = function(file, sizeType, size, name) {
+var imageResize = function(file, sizeType, size, name) {
   console.log("Resizing " + file + " " + sizeType + " to " + size);
   gulp.src(file)
     .pipe(plumber({errorHandler: onError}))
@@ -43,13 +43,16 @@ var _image_resize = function(file, sizeType, size, name) {
 
 
 // Resize a bunch of images
-var _image_batch_resize = function(files, retina, retina_name) {
+// - all images from 'to-resize' are resized and moved to the 'resized' folder
+var imageBatchResize = function(files, retina, retina_name) {
   return gulp.src(files)
     .pipe(plumber({errorHandler: onError}))
     .pipe(data(function(file) {
+
       // Get the associated JSON file with size definitions
       splits = file.path.split('.');
       json_file = splits[0] + '.json';
+
       // If there is JSON resize the images
       if (fs.existsSync(json_file)) {
         json = require(json_file);
@@ -63,7 +66,7 @@ var _image_batch_resize = function(files, retina, retina_name) {
             size = sizes[i].width;
             sizeType = 'width';
           }
-          _image_resize(file.path, sizeType, size * retina, sizes[i].name + retina_name);
+          imageResize(file.path, sizeType, size * retina, sizes[i].name + retina_name);
         }
       }
     }))
@@ -72,13 +75,13 @@ var _image_batch_resize = function(files, retina, retina_name) {
 
 // Image resize
 // - create different images for different devices
-gulp.task('image_resize', function() {
-  _image_batch_resize(paths.images_resize_src, 1, '');
+gulp.task('imageResize', function() {
+  imageBatchResize(paths.images_resize_src, 1, '');
 });
 
 
 // Retina images
 // - create 2x images for different devices
-gulp.task('image_resize_2x', function() {
-  _image_batch_resize(paths.images_resize_src, 2, '2x');
+gulp.task('imageResize2x', function() {
+  imageBatchResize(paths.images_resize_src, 2, '2x');
 });

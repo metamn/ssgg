@@ -1,4 +1,6 @@
 // HTML
+// - minify and copy html files to dist
+// - create seo friendly urls
 
 
 // Plugins
@@ -16,9 +18,7 @@ var paths = require('./../config');
 
 
 
-// Minify and copy html files to dist
-// - create seo friendly urls
-var _html = function(source, dest) {
+var html = function(source, dest) {
   return gulp.src(source)
     .pipe(plumber({errorHandler: onError}))
 
@@ -54,11 +54,11 @@ var _html = function(source, dest) {
 
 // Task for minifying and moving .html files for /site
 gulp.task('html', function() {
-  _html('site/' + paths.html_src, paths.dest);
+  html('site/' + paths.html_src, paths.dest);
 });
 
 
 // Task for minifying and moving .html files for /styleguide
-gulp.task('html_sg', function() {
-  _html('styleguide/' + paths.html_src, paths.dest + '/styleguide/');
+gulp.task('htmlSg', function() {
+  html('styleguide/' + paths.html_src, paths.dest + '/styleguide/');
 });

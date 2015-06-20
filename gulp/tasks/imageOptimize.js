@@ -1,4 +1,7 @@
 // Optimize images
+// - compress PNG, JPG, GIF and SVG images
+// - see https://www.npmjs.com/package/gulp-imagemin
+
 
 // Plugins
 var gulp = require('gulp'),
@@ -14,12 +17,8 @@ var paths = require('./../config');
 
 
 
-
-// Optimize images
-// - the gulp pngquant task gives an error
-// - we use gulp shell to run pngquant manually
-// - the old file will be overwritten instead of appending the usual 'fs8' suffix
-gulp.task('image_optimize', function() {
+// Task for compressing / optimizing images
+gulp.task('imageOptimize', function() {
   return gulp.src(paths.image_resize_dest + paths.image_extensions)
     .pipe(plumber({errorHandler: onError}))
     .pipe(imagemin({

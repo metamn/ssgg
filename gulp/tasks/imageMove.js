@@ -1,5 +1,5 @@
 // Move images
-
+// - move resized and compressed images to destination
 
 // Plugins
 var gulp = require('gulp'),
@@ -11,10 +11,8 @@ var gulp = require('gulp'),
 var paths = require('./../config');
 
 
-
-// Move resized and compressed images to destination
-// - also clean up the directory
-gulp.task('image_move', function() {
+// Task for moving image files for /site
+gulp.task('imageMove', function() {
   return gulp.src(paths.image_resize_dest + paths.image_extensions)
     .pipe(plumber({errorHandler: onError}))
     .pipe(gulp.dest(paths.images_dest))

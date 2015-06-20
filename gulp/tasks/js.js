@@ -1,4 +1,6 @@
 // JS
+// - collect all .js files from '/components' into a single file and minimize
+// - move the final file to 'dist'
 
 
 // Plugins
@@ -32,6 +34,6 @@ gulp.task('js', function() {
 });
 
 // Task for concatenating, minifying and moving .js files for /styleguide
-gulp.task('js_sg', function() {
+gulp.task('jsSg', function() {
   _js(paths.styleguide_js_src, paths.styleguide_js_filename, paths.styleguide_js_dest);
 });

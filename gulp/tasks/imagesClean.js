@@ -10,6 +10,6 @@ var gulp = require('gulp'),
 var paths = require('./../config');
 
 
-gulp.task('images_clean', function(cb) {
+gulp.task('imagesClean', function(cb) {
   del(paths.image_resize_dest + paths.image_extensions, cb);
 });

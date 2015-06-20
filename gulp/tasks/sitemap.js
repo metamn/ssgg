@@ -1,4 +1,6 @@
 // Sitemap
+//
+// - generate the sitemap.xml
 
 // Plugins
 var gulp = require('gulp'),

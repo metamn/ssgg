@@ -1,4 +1,4 @@
-// TheStyleguide generator Gulp task
+// The Styleguide generator Gulp task
 // - it generates the /styleguide
 
 
@@ -11,15 +11,15 @@ var gulp = require('gulp'),
 // - otherwise Gulp is messing up everything with it's async task runner
 gulp.task('styleguide', function(cb) {
   runSequence(
-    'styleguide_menu',
-    'styleguide_folders',
-    'styleguide_folders_remove',
-    'styleguide_kss',
-    'swig_sg',
-    'html_sg',
-    'scss_sg',
-    'js_sg',
-    'js_move_sg',
+    'styleguideMenu',
+    'styleguideFolders',
+    'styleguideFoldersRemove',
+    'styleguideKss',
+    'swigSg',
+    'htmlSg',
+    'scssSg',
+    'jsSg',
+    'jsMoveSg',
     cb
   );
 });

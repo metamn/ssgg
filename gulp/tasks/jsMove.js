@@ -21,11 +21,11 @@ var _js_move = function(src, dest) {
 
 
 // Task for moving .js files for /site
-gulp.task('js_move', function() {
+gulp.task('jsMove', function() {
   _js_move('site/' + paths.js_move_src, paths.js_move_dest);
 });
 
 // Task for moving .js files for /styleguide
-gulp.task('js_move_sg', function() {
+gulp.task('jsMoveSg', function() {
   _js_move('styleguide/' + paths.js_move_src, paths.styleguide_js_move_dest);
 });

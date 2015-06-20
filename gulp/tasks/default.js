@@ -1,5 +1,6 @@
 // The default Gulp task
 // - it generates the /site
+// - contains all subtasks required to generate the site
 
 
 // Plugins
@@ -16,7 +17,7 @@ gulp.task('default', function(cb) {
     'html',
     'scss',
     'js',
-    'js_move',
+    'jsMove',
     cb
   );
 });
