@@ -1,4 +1,4 @@
-## Static Site and Styleguide Generator with Gulp
+### Static Site and Styleguide Generator with Gulp
 
 SSGG is a Gulp based tool and workflow generating static websites together with the associated styleguide.
 
@@ -8,7 +8,7 @@ SSGG is a Gulp based tool and workflow generating static websites together with 
 * [SWIG](http://paularmstrong.github.io/swig/) &mdash; Transforms JSON data and content into HTML, CSS and JS.
 * KSS &mdash; [Knyle Style Sheets](http://warpspire.com/kss/) adds documentation to CSS files which are later displayed by the styleguide
 
-Read more about about the idea (in this post)[https://medium.com/@metamn/creating-a-styleguide-with-gulp-2298fc928086].
+Read more about about the idea [in this post](https://medium.com/@metamn/creating-a-styleguide-with-gulp-2298fc928086).
 
 ### Front-end best practices
 
