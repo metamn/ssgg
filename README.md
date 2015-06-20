@@ -29,12 +29,15 @@ See the [wiki](https://github.com/metamn/ssgg/wiki).
 
 ### Usage
 
+#### Install
+
 ```
 git clone https://github.com/metamn/ssgg
 cd ssgg
 [sudo] npm install
 ```
 
+#### Run
 ```
 gulp images
 gulp
