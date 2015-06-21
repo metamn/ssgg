@@ -1,6 +1,8 @@
 // Sitemap
 //
 // - generate the sitemap.xml
+//
+// Styleguide sitemap
 
 // Plugins
 var gulp = require('gulp'),

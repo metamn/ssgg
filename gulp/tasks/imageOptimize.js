@@ -3,7 +3,7 @@
 // - compress PNG, JPG, GIF and SVG images
 // - see https://www.npmjs.com/package/gulp-imagemin
 //
-// Styleguide image optimize
+// Styleguide imageOptimize
 
 // Plugins
 var gulp = require('gulp'),

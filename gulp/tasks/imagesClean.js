@@ -4,7 +4,7 @@
 // - after an image is optimized the 'resized' folder should be emptied.
 // - otherwise the imageOptimize task will re-optimize also the already optimized images found here
 //
-
+// Styleguide imagesClean
 
 // Plugins
 var gulp = require('gulp'),

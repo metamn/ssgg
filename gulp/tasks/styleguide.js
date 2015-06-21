@@ -11,6 +11,7 @@
 // - collect all .js files from '/components' into a single file (styleguide.min.js), minimize it and move to the destination
 // - move thrid party scripts from 'assets/scripts' into destination
 //
+// Styleguide styleguide
 
 // Plugins
 var gulp = require('gulp'),

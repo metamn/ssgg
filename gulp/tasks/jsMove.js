@@ -2,7 +2,7 @@
 //
 // - move thrid party scripts from 'assets/scripts' into destination
 //
-// Styleguide jsmove
+// Styleguide jsMove
 
 // Plugins
 var gulp = require('gulp'),

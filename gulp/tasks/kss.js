@@ -2,6 +2,8 @@
 //
 // - collect all KSS documentation from all .scss files from site and save into kss.json
 // - later this .json file can be processed by the styleguide
+//
+// Styleguide KSS
 
 // Plugins
 var gulp = require('gulp'),

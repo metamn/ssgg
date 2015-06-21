@@ -1,9 +1,9 @@
-// Image resize
+// Image Resize
 //
 // - create responsive images with a specific height or width for each device together with their retina (2x) version
 // - the size of the image is specified in the associated .json file. (image.json for image.png)
 //
-// Styleguide image-resize
+// Styleguide imageResize
 
 // Plugins
 var gulp = require('gulp'),
