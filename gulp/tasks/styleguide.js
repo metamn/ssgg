@@ -1,5 +1,6 @@
 // The Styleguide generator Gulp task
 // - it generates the /styleguide
+// - collects all KSS documentation from SCSS files into kss.json
 
 
 // Plugins

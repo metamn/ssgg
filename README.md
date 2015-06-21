@@ -2,7 +2,7 @@
 
 SSGG is a Gulp based tool and workflow generating static websites together with the associated styleguide.
 
-### Features
+### Technologies
 
 * JSON &mdash; Common interface elements and declarations re-used by the site and the styleguide are stored into a JSON file database
 * SWIG &mdash; Transforms JSON data and content into HTML, CSS and JS.
@@ -27,13 +27,12 @@ SSGG is highly customizable and extendable. You can adapt easily to your specifi
 
 See the [wiki](https://github.com/metamn/ssgg/wiki).
 
-### Usage
+### Demo
 
 A quick demo is found in this repository to showcase the basic capabilities of SSGG:
 
-* creates various responsive images
-* displays color definitions in the styleguide
-
+* creating responsive images
+* displaying an item in the styleguide
 
 
 ##### Install

@@ -1,6 +1,7 @@
 // The default Gulp task
 // - it generates the /site
-// - contains all subtasks required to generate the site
+// - compiles SWIG, SCSS files and moves to the destination
+// - concatenates JS files and moves to the destination
 
 
 // Plugins
