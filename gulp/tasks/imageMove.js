@@ -1,5 +1,8 @@
 // Move images
+//
 // - move resized and compressed images to destination
+//
+//
 
 // Plugins
 var gulp = require('gulp'),

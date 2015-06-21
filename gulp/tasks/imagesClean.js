@@ -1,4 +1,9 @@
-// Clean the temp folder where images are resized
+// Images Clean
+//
+// - clean all images from the 'resized' folder
+// - after an image is optimized the 'resized' folder should be emptied.
+// - otherwise the imageOptimize task will re-optimize also the already optimized images found here
+//
 
 
 // Plugins

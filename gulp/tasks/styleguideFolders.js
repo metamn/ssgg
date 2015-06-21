@@ -1,4 +1,7 @@
 // Styleguide Folders
+//
+// - generate styleguide entries from site
+// - sync styleguide entries with the site. if a component is removed from site and still present in the styleguide a message will be displayed in the console
 
 
 // Plugins

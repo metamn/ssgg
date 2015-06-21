@@ -1,4 +1,12 @@
-// Resize, compress and move images
+// Images
+//
+// - create responsive images with a specific height or width for each device together with their retina (2x) version
+// - compress PNG, JPG, GIF and SVG images
+// - move resized and compressed images to destination
+//
+// Styleguide images
+
+
 //
 // - supported formats: PNG, JPG, GIF, SVG
 //

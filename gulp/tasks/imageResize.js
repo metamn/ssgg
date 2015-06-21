@@ -1,7 +1,9 @@
 // Image resize
-// - create images with a specific height or width
-// - create 2x images for retina displays
-
+//
+// - create responsive images with a specific height or width for each device together with their retina (2x) version
+// - the size of the image is specified in the associated .json file. (image.json for image.png)
+//
+// Styleguide image-resize
 
 // Plugins
 var gulp = require('gulp'),

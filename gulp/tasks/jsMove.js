@@ -1,6 +1,8 @@
 // jsMove
-// - move thrid party scripts from /scripts into destination
-
+//
+// - move thrid party scripts from 'assets/scripts' into destination
+//
+// Styleguide jsmove
 
 // Plugins
 var gulp = require('gulp'),

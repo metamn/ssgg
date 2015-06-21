@@ -1,5 +1,6 @@
 // KSS
-// - collects all KSS documentation from all .scss files and saves into a .json file
+//
+// - collect all KSS documentation from all .scss files from site and save into kss.json
 // - later this .json file can be processed by the styleguide
 
 // Plugins

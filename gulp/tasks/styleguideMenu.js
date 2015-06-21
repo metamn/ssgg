@@ -1,4 +1,9 @@
 // Styleguide Menu
+//
+// - create a menu to display styleguide entries for 'Framework' and 'Project' BEM folders
+// - the menu will be stored into a .html file and copied to a special styleguide folder
+//
+
 
 
 // Plugins

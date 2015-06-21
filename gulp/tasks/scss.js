@@ -1,11 +1,11 @@
 // SCSS
 //
-// - compile the global .scss file (site.scss, styleguide.scss) with autoprefixer
-// - minify and copy the final .css and the sourcemap to dist/assets/styles
+// - compile the global .scss files (site.scss, styleguide.scss) with autoprefixer, minify them, and move them to destination together with the sourcemaps
 //
 // - the global .scss file should be in charge @importing all other .scss files from /components
 // - the import should be done in the right order otherwise some mixins might not be found
 //
+// Styleguide scss
 
 // Plugins
 var gulp = require('gulp'),
@@ -38,6 +38,7 @@ var _scss = function(source, dest) {
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(dest));
 }
+
 
 // Task for compiling and movind the .css for /site
 gulp.task('scss', function(){

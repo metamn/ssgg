@@ -1,7 +1,9 @@
 // HTML
-// - minify and copy html files to dist
+//
+// - minify and copy .html files to destination
 // - create seo friendly urls
-
+//
+// Styleguide html
 
 // Plugins
 var gulp = require('gulp'),
@@ -37,7 +39,7 @@ var html = function(source, dest) {
         path.dirname = '';
       }
 
-      // rename work.html > index.html
+      // rename work/work.html > work/index.html
       path.basename = 'index';
 
       // rename not-found/index.html > 404.html
