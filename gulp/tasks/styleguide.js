@@ -15,7 +15,7 @@ gulp.task('styleguide', function(cb) {
     'styleguideMenu',
     'styleguideFolders',
     'styleguideFoldersRemove',
-    'styleguideKss',
+    'styleguideKSS',
     'swigSg',
     'htmlSg',
     'scssSg',
@@ -24,3 +24,6 @@ gulp.task('styleguide', function(cb) {
     cb
   );
 });
+
+// An alias task for 'styleguide'
+gulp.task('sg', ['styleguide']);

@@ -16,7 +16,7 @@ var paths = require('./../config');
 
 
 // - copy folders from /site under styleguide/pages
-gulp.task('styleguide_folders', function() {
+gulp.task('styleguideFolders', function() {
   return gulp.src(paths.styleguide_folders_copy)
     .pipe(plumber({errorHandler: onError}))
     .pipe(data(function(file) {
@@ -34,7 +34,7 @@ gulp.task('styleguide_folders', function() {
 
 
 // - remove unused folders from styleguide
-gulp.task('styleguide_folders_remove', function() {
+gulp.task('styleguideFoldersRemove', function() {
   return gulp.src(paths.styleguide_folders_remove)
     .pipe(plumber({errorHandler: onError}))
     .pipe(data(function(file) {

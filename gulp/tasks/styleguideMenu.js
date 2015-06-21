@@ -13,7 +13,7 @@ var paths = require('./../config');
 
 
 // - create html menu for styleguide
-gulp.task('styleguide_menu', function() {
+gulp.task('styleguideMenu', function() {
   var json = dirTree(paths.styleguide_menu_framework);
   var menu = makeUL([json]);
   fs.writeFileSync(paths.styleguide_menu_framework_dest, menu);

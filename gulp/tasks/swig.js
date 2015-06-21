@@ -69,6 +69,6 @@ gulp.task('swig', function() {
 });
 
 // Task for compiling .swig files from /styleguide
-gulp.task('swig_sg', function() {
+gulp.task('swigSg', function() {
   _swig('styleguide/' + paths.swig_src, 'styleguide/' + paths.swig_dest, paths.styleguide_config_json, true);
 });

@@ -21,7 +21,7 @@ var paths = require('./../config');
 
 
 // Resize a single image with ImageMagick
-var imageResize = function(file, sizeType, size, name) {
+var _imageResize = function(file, sizeType, size, name) {
   console.log("Resizing " + file + " " + sizeType + " to " + size);
   gulp.src(file)
     .pipe(plumber({errorHandler: onError}))
@@ -66,7 +66,7 @@ var imageBatchResize = function(files, retina, retina_name) {
             size = sizes[i].width;
             sizeType = 'width';
           }
-          imageResize(file.path, sizeType, size * retina, sizes[i].name + retina_name);
+          _imageResize(file.path, sizeType, size * retina, sizes[i].name + retina_name);
         }
       }
     }))
