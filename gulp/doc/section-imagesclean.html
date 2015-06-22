@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+  <title>Gulp Tasks</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -19,7 +19,7 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
+    <h1 class="kss-doc-title">Gulp Tasks</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -70,14 +70,14 @@
           <span class="kss-nav__ref">7</span
           ><span class="kss-nav__name">Images Clean</span>
         </a>
+        <ul class="kss-nav__menu-child">
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-js.html">
           <span class="kss-nav__ref">8</span
           ><span class="kss-nav__name">JS</span>
         </a>
-        <ul class="kss-nav__menu-child">
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-jsmove.html">
@@ -138,25 +138,27 @@
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-js" class="kss-section kss-section--depth-1">
+      <div     id="kssref-imagesclean" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-js">
+        <a class="kss-title__permalink" href="#kssref-imagesclean">
           <span class="kss-title__ref">
-              8
+              7
             <span class="kss-title__permalink-hash">
-                #js
+                #imagesClean
             </span>
           </span>
-          JS
+          Images Clean
         </a>
       </h1>
 
 
       <div class="kss-description">
         <ul>
-<li>collect all .js files from &#39;/components&#39; into a single file (site.min.js, styleguide.min.js), minimize it and move to the destination</li>
+<li>clean all images from the &#39;resized&#39; folder</li>
+<li>after an image is optimized the &#39;resized&#39; folder should be emptied.</li>
+<li>otherwise the imageOptimize task will re-optimize also the already optimized images found here</li>
 </ul>
 
       </div>

@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+  <title>Gulp Tasks</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -19,7 +19,7 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
+    <h1 class="kss-doc-title">Gulp Tasks</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -46,8 +46,6 @@
           <span class="kss-nav__ref">3</span
           ><span class="kss-nav__name">Image Move</span>
         </a>
-        <ul class="kss-nav__menu-child">
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-imageoptimize.html">
@@ -96,6 +94,8 @@
           <span class="kss-nav__ref">11</span
           ><span class="kss-nav__name">SCSS</span>
         </a>
+        <ul class="kss-nav__menu-child">
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-sitemap.html">
@@ -138,25 +138,29 @@
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-imagemove" class="kss-section kss-section--depth-1">
+      <div     id="kssref-scss" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-imagemove">
+        <a class="kss-title__permalink" href="#kssref-scss">
           <span class="kss-title__ref">
-              3
+              11
             <span class="kss-title__permalink-hash">
-                #imageMove
+                #scss
             </span>
           </span>
-          Image Move
+          SCSS
         </a>
       </h1>
 
 
       <div class="kss-description">
         <ul>
-<li>move resized and compressed images to destination</li>
+<li><p>compile the global .scss files (site.scss, styleguide.scss) with autoprefixer, minify them, and move them to destination together with the sourcemaps</p>
+</li>
+<li><p>the global .scss file should be in charge @importing all other .scss files from /components</p>
+</li>
+<li>the import should be done in the right order otherwise some mixins might not be found</li>
 </ul>
 
       </div>

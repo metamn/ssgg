@@ -11,5 +11,5 @@ var gulp = require('gulp'),
 
 // Generate documentation for all Gulp tasks
 gulp.task('ssgg', shell.task([
-  'kss-node --mask "*.js" --source gulp/tasks/ --destination kss'
+  'kss-node --mask "*.js" --source gulp/tasks/ --destination gulp/doc --title "Gulp Tasks"'
 ]))

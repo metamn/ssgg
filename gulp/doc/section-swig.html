@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+  <title>Gulp Tasks</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -19,7 +19,7 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
+    <h1 class="kss-doc-title">Gulp Tasks</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -106,8 +106,6 @@
           <span class="kss-nav__ref">13</span
           ><span class="kss-nav__name">Start Server</span>
         </a>
-        <ul class="kss-nav__menu-child">
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-styleguide.html">
@@ -132,32 +130,40 @@
           <span class="kss-nav__ref">17</span
           ><span class="kss-nav__name">SWIG</span>
         </a>
+        <ul class="kss-nav__menu-child">
+        </ul>
       </li>
     </ul>
   </nav>
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-startserver" class="kss-section kss-section--depth-1">
+      <div     id="kssref-swig" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-startserver">
+        <a class="kss-title__permalink" href="#kssref-swig">
           <span class="kss-title__ref">
-              13
+              17
             <span class="kss-title__permalink-hash">
-                #startServer
+                #swig
             </span>
           </span>
-          Start Server
+          SWIG
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <ul>
-<li>starts a local server (ie. <a href="http://localhost:3000">http://localhost:3000</a>) and an external (intranet) server (ie. <a href="http://192.168.0.54">http://192.168.0.54</a>)</li>
-<li>the external server is used to test the site with all devices connected to your wifi network</li>
+        <p>Compile .swig files into .html, .scss or .js</p>
+<ul>
+<li>.swig files has to have two extensions like colors.scss.swig or page.html.swig. Once compiled the .swig extension will be removed.</li>
+<li>if there is a YAML Front Matter definition in a .swig file it will be processed</li>
+<li>if there is an associated .json file it will be processed (ie. colors.scss.swig will look for colors.scss.json)</li>
+<li>when generating the styleguide the associated .json file from site will be used. For example colors.scss.json from site will be available for colors.scss.swig in the styleguide</li>
+<li>the global &#39;config.json&#39; will be processed</li>
+<li>when generating the styleguide the global &#39;styleguide/config.json&#39; will be processed</li>
+<li>the global &#39;kss.json&#39; file will be processed</li>
 </ul>
 
       </div>

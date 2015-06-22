@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+  <title>Gulp Tasks</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -19,7 +19,7 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
+    <h1 class="kss-doc-title">Gulp Tasks</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -100,8 +100,6 @@
           <span class="kss-nav__ref">12</span
           ><span class="kss-nav__name">Sitemap</span>
         </a>
-        <ul class="kss-nav__menu-child">
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-startserver.html">
@@ -120,6 +118,8 @@
           <span class="kss-nav__ref">15</span
           ><span class="kss-nav__name">Styleguide Folders</span>
         </a>
+        <ul class="kss-nav__menu-child">
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-styleguidemenu.html">
@@ -138,25 +138,26 @@
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-sitemap" class="kss-section kss-section--depth-1">
+      <div     id="kssref-styleguidefolders" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-sitemap">
+        <a class="kss-title__permalink" href="#kssref-styleguidefolders">
           <span class="kss-title__ref">
-              12
+              15
             <span class="kss-title__permalink-hash">
-                #sitemap
+                #styleguideFolders
             </span>
           </span>
-          Sitemap
+          Styleguide Folders
         </a>
       </h1>
 
 
       <div class="kss-description">
         <ul>
-<li>generate the sitemap.xml</li>
+<li>generate styleguide entries from site</li>
+<li>sync styleguide entries with the site. if a component is removed from site and still present in the styleguide a message will be displayed in the console</li>
 </ul>
 
       </div>

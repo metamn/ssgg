@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>KSS Style Guide</title>
+  <title>Gulp Tasks</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -19,7 +19,7 @@
 
 <div class="kss-sidebar kss-style">
   <header class="kss-header">
-    <h1 class="kss-doc-title">KSS Style Guide</h1>
+    <h1 class="kss-doc-title">Gulp Tasks</h1>
   </header>
   <nav class="kss-nav">
     <ul class="kss-nav__menu">
@@ -34,6 +34,8 @@
           <span class="kss-nav__ref">1</span
           ><span class="kss-nav__name">Default</span>
         </a>
+        <ul class="kss-nav__menu-child">
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-html.html">
@@ -112,8 +114,6 @@
           <span class="kss-nav__ref">14</span
           ><span class="kss-nav__name">Styleguide</span>
         </a>
-        <ul class="kss-nav__menu-child">
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-styleguidefolders.html">
@@ -138,33 +138,29 @@
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-styleguide" class="kss-section kss-section--depth-1">
+      <div     id="kssref-default" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-styleguide">
+        <a class="kss-title__permalink" href="#kssref-default">
           <span class="kss-title__ref">
-              14
+              1
             <span class="kss-title__permalink-hash">
-                #styleguide
+                #default
             </span>
           </span>
-          Styleguide
+          Default
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>The default Gulp task to generate the styleguide</p>
+        <p>The default Gulp task to generate the site</p>
 <ul>
-<li>create a menu to display styleguide entries for &#39;Framework&#39; and &#39;Project&#39; BEM folders</li>
-<li>generate styleguide entries from site</li>
-<li>sync styleguide entries with the site</li>
-<li>collect all KSS documentation from all .scss files from site and save into kss.json</li>
 <li>compile .swig files into .html, .scss or .js</li>
 <li>minify and copy .html files to destination</li>
-<li>compile the global styleguide.scss with autoprefixer, minify, and move to destination together with the sourcemap</li>
-<li>collect all .js files from &#39;/components&#39; into a single file (styleguide.min.js), minimize it and move to the destination</li>
+<li>compile the global .scss files (site.scss, styleguide.scss) with autoprefixer, minify them, and move them to destination together with the sourcemaps</li>
+<li>collect all .js files from &#39;/components&#39; into a single file (site.min.js, styleguide.min.js), minimize it and move to the destination</li>
 <li>move thrid party scripts from &#39;assets/scripts&#39; into destination</li>
 </ul>
 
